@@ -134,7 +134,7 @@ namespace TheKoans
 			var firstTest = implicitInt + oneSpecialInt;
 			var secondTest = anotherSpecialInt + implicitInt;
 
-			//Assert.AreEqual (typeof(SpecialInt), firstTest.GetType (), "An int and a user-defined type that can return an int walk into a bar... And their baby is a...");
+			Assert.AreEqual (typeof(int), firstTest.GetType (), "An int and a user-defined type that can return an int walk into a bar... And their baby is a...");
 			Assert.AreEqual (typeof(int), secondTest.GetType (), "This will show you the type is not based on the order of expression's operands, but their result.");
 		}
 	}
